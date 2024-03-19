@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="content">
+        <h1>Etch-a-Sketch</h1>
+        <div class="flex">
+          <div class="pickcolor-container">
+            <label for="pickcolor-btn" class="label-txt">Pick a color: </label>
+            <input type="color" class="pickcolor-btn" id="pickcolor-btn" />
+          </div>
+          <div class="grid-selection-container">
+            <label for="grid-selection" id="grid-selection-txt"></label>
+            <input
+              type="range"
+              id="grid-selection"
+              min="1"
+              value="16"
+              max="64"
+            />
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+
+        <div class="container"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
